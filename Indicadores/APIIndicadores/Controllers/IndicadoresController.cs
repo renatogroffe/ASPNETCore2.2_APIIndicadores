@@ -26,7 +26,7 @@ namespace APIIndicadores.Controllers
         }    
 
         [HttpGet("{indicador}")]
-        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public ActionResult<Indicador> Get(
             [FromServices]IConfiguration configuration,
             string indicador)
